@@ -1,0 +1,49 @@
+build
+dist
+.idea
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.gem
+*.pem
+
+# Saves #
+#########
+saves/*
+imported_saves/*
+pvdm_snapshots/*
+sentiment_data/*
+*.npy
+*.mat
+*.vocab
+*.svocab
+text8
+__pycache__/*
+*.pyc
+*.egg-info
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+=======
+.DS_Store
