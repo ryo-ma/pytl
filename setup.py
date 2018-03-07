@@ -6,7 +6,7 @@ def readfile(file_name):
 
 setup(
     name='pytl',
-    version='0.2',
+    version='0.2.1',
     description='Command line tool that parses python file, enumerates classes and methods as a tree structure.',
     long_description=readfile('README.md'),
     ext_modules=[],
@@ -20,11 +20,12 @@ setup(
     platforms='any',
     zip_safe=False,
     classifiers=[
+        'Environment :: Console',
+        'Intended Audience :: End Users/Desktop',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 2.7',
         'License :: OSI Approved :: MIT License',
     ],
     setup_requires=[],
