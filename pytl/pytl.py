@@ -74,7 +74,7 @@ class Parser:
     def max_line_number_length(self):
         return len(str(max([x.get_line_number() for x in self.text_list])))
 
-    def print(self):
+    def text_print(self):
         for line in self.text_list:
             left_space = self.max_line_number_length() - len(str(line.get_line_number()))
             print('{}{}'.format(' ' * left_space, line))
@@ -87,7 +87,7 @@ def main():
     parser.add_argument('-d', '--def-only', action='store_true', default=False, help='Show only the def line')
     parse_args = parser.parse_args()
     with open(parse_args.python_file_path, 'r') as f:
-        Parser(f.read(), parse_args.class_only, parse_args.def_only).print()
+        Parser(f.read(), parse_args.class_only, parse_args.def_only).text_print()
 
 
 if __name__ == '__main__':
