@@ -9,7 +9,7 @@ def readfile(file_name):
 
 setup(
     name='pytl',
-    version='0.2.2',
+    version='0.2.3',
     description='Command line tool that parses python file, enumerates classes and methods as a tree structure.',
     long_description=readfile('README.md'),
     ext_modules=[],
