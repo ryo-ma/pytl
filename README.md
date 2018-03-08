@@ -61,4 +61,26 @@ $ pip install pytl
 
 [MIT](https://github.com/ryo-ma/pytl/blob/master/LICENSE)
 
+## Tips
 
+Using percol makes pytl even more useful
+
+[percol](https://github.com/mooz/percol)
+
+Incremental search from pytl and open in vi.
+
+```
+function ppytl(){
+  if [ -n "$1" ]; then
+    pytl
+  else
+    file=$1
+    line=$(pytl $file | percol | awk '{ print $1 }')
+    vi -c $line $file
+  fi
+}
+```
+
+```
+$ ppytl test.py
+```
