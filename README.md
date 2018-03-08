@@ -71,7 +71,7 @@ Incremental search from pytl and open in vi.
 
 ```
 function ppytl(){
-  if [ -n "$1" ]; then
+  if [ -z "$1" ]; then
     pytl
   else
     file=$1
