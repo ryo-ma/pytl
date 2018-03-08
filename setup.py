@@ -2,11 +2,14 @@ import os
 from setuptools import setup, find_packages
 
 def readfile(file_name):
-    return open(os.path.join(os.path.dirname(__file__), file_name)).read()
+    try:
+        return open(os.path.join(os.path.dirname(__file__), file_name)).read()
+    except IOError:
+        return ''
 
 setup(
     name='pytl',
-    version='0.2.1',
+    version='0.2.2',
     description='Command line tool that parses python file, enumerates classes and methods as a tree structure.',
     long_description=readfile('README.md'),
     ext_modules=[],
@@ -22,6 +25,7 @@ setup(
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.4',

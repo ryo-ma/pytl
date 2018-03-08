@@ -2,7 +2,7 @@ import ast
 import argparse
 
 
-class LineText:
+class LineText(object):
 
     def __init__(self, node, indent):
         self.node = node
