@@ -28,7 +28,7 @@ class ClassDefLineText(LineText):
         super(ClassDefLineText, self).__init__(class_node, indent)
 
     def __str__(self):
-        return '{}: {}class {}'.format(self.get_line_number(), self.get_indent_text(), self.name)
+        return '{} : {}class {}'.format(self.get_line_number(), self.get_indent_text(), self.name)
 
 
 class FunctionDefLineText(LineText):
@@ -44,7 +44,7 @@ class FunctionDefLineText(LineText):
             self.args = ', '.join([a.id for a in def_node.args.args])
 
     def __str__(self):
-        return '{}: {}def {}({})'.format(self.get_line_number(), self.get_indent_text(), self.name, self.args)
+        return '{} : {}def {}({})'.format(self.get_line_number(), self.get_indent_text(), self.name, self.args)
 
 
 INDENT_NUM = 2

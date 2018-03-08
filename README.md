@@ -1,6 +1,6 @@
 pytl
 ====
-[![0.2.3](https://img.shields.io/badge/pypi-0.2.3-brightgreen.svg)](https://pypi.python.org/pypi/pytl/)
+[![0.2.4](https://img.shields.io/badge/pypi-0.2.4-brightgreen.svg)](https://pypi.python.org/pypi/pytl/)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/ryo-ma/pytl/blob/master/LICENSE)
 
 ## Overview
