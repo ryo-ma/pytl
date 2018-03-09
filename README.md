@@ -7,6 +7,11 @@ pytl
 
 Command line tool that parses python file, enumerates classes and methods as a tree structure.
 
+## Install
+
+``` bash
+$ pip install pytl
+```
 
 ## Usage
 
@@ -25,7 +30,7 @@ $ pytl test.py
 
 ```
 
-Show only the def line
+Show only the def line.
 
 ``` bash
 $ pytl test.py -d
@@ -41,7 +46,7 @@ $ pytl test.py -d
 
 ```
 
-Show only the class line
+Show only the class line.
 
 ``` bash
 $ pytl test.py -c
@@ -50,20 +55,9 @@ $ pytl test.py -c
 
 ```
 
-
-## Install
-
-``` bash
-$ pip install pytl
-```
-
-## Licence
-
-[MIT](https://github.com/ryo-ma/pytl/blob/master/LICENSE)
-
 ## Tips
 
-Using percol makes pytl even more useful
+Using percol makes pytl even more useful.
 
 [percol](https://github.com/mooz/percol)
 
@@ -84,3 +78,7 @@ function ppytl(){
 ```
 $ ppytl test.py
 ```
+
+## Licence
+
+[MIT](https://github.com/ryo-ma/pytl/blob/master/LICENSE)
